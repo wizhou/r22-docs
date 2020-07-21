@@ -1,0 +1,12 @@
+/* al_kashi-regular - _latin */
+@font-face {
+  font-family: 'Al Kashi';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://r22.fr/assets/fonts/al_kashi/al_kashi-webfont.eot'); /* IE9 Compat Modes */
+  src: local('Al Kashi'), local('Al Kashi'),
+       url('https://r22.fr/assets/fonts/al_kashi/al_kashi-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://r22.fr/assets/fonts/al_kashi/al_kashi-webfont.woff') format('woff'), /* Modern Browsers */
+       url('https://r22.fr/assets/fonts/al_kashi/al_kashi-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://r22.fr/assets/fonts/al_kashi/al_kashi-webfont.svg') format('svg'); /* Legacy iOS */
+}
