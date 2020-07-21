@@ -2,8 +2,8 @@ baseURL = "docs.r22.fr"
 languageCode = "fr-FR"
 defaultContentLanguage= "fr"
 title = "R22 Documentation"
+description = "La documentation du site r22.fr"
 theme = "book"
-
 
 disableKinds = ['taxonomy', 'taxonomyTerm']
 
@@ -28,11 +28,6 @@ enableGitInfo = true
     weight = 1
 
 [menu]
-# [[menu.before]]
-[[menu.after]]
-  name = "Github"
-  url = "https://github.com/wizhou/inact-docs"
-  weight = 10
 
 [[menu.after]]
   name = "r22"
@@ -60,12 +55,12 @@ enableGitInfo = true
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo = 'https://github.com/wizhou/inact-docs'
+  BookRepo = 'https://bitbucket.org/wizhou/r22-docs'
 
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Edit path must point to root directory of repo.
-  BookEditPath = '/edit/master/content'
+  BookEditPath = 'src/master/content'
 
   # Configure the date format used on the pages
   # - In git information
