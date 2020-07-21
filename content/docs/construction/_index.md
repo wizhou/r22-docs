@@ -14,7 +14,7 @@ Le site internet comprend la hiérarchie suivante :
 
 - Les **Programmes**, qui sont des axes éditoriaux liés à des antennes. Ils peuvent être liés à des thématiques spécifiques, des calendriers d’émissions, des événements récurrents, etc. Idéalement, ils proposent un certain nombre de contributions, qui peuvent être récurrents, sur un thème particulier.
 
-- Les **Contributions** sont les sons qui sont publiés par les antennes, au sein de programmes ou non, dans la r22. Ils se classent en plusieurs catégories : Les **Publications**, les **Collections** et les **Playlists**.
+- Les **Contributions** sont les sons qui sont publiés par les antennes, au sein de programme ou non, dans la r22. Ils se classent en plusieurs catégories : Les **Publications**, les **Collections** et les **Playlists**.
 
 ***
 
