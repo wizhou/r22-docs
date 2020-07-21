@@ -24,9 +24,9 @@ hugo
 echo "Updating gh-pages branch"
 CURRENTDATE=`date +"%D %T"`
 cd public && git add --all && git commit -m "Publishing to build ${CURRENTDATE}"
-
-echo "Pushing to github"
-git push --all
-
-echo "Push to live"
-git-ftp push -s prod
+# 
+# echo "Pushing to github"
+# git push --all
+#
+# echo "Push to live"
+# git-ftp push -s prod
