@@ -12,7 +12,7 @@ mkdir public
 git worktree prune
 rm -rf .git/worktrees/public/
 
-echo "Checking out gh-pages branch into public"
+echo "Checking out build branch into public"
 git worktree add -B build public origin/build
 
 echo "Removing existing files"
@@ -24,9 +24,10 @@ hugo
 echo "Updating gh-pages branch"
 CURRENTDATE=`date +"%D %T"`
 cd public && git add --all && git commit -m "Publishing to build ${CURRENTDATE}"
-# 
+
 # echo "Pushing to github"
 # git push --all
-#
-# echo "Push to live"
-# git-ftp push -s prod
+git checkout build
+echo "Push to live"
+git-ftp push
+git checkout master

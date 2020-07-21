@@ -1,4 +1,4 @@
-baseURL = "docs.r22.fr"
+baseURL = "https://docs.r22.fr"
 languageCode = "fr-FR"
 defaultContentLanguage= "fr"
 title = "R22 Documentation"
