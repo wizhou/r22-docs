@@ -1,0 +1,52 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          # extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.R22_TOKEN }}
+          publish_branch: build
+          publish_dir: ./public
+
+      - uses: actions/checkout@v1
+        with:
+          ref: 'build'
+
+      - name: Deploy to docs.r22.fr
+        uses: sebastianpopp/git-ftp-action@3.0.0
+        with:
+          # URL
+          url: ${{ secrets.R22_FTP_URL }}
+          # FTP login name
+          user: ${{ secrets.R22_FTP_USER }}
+          # FTP password
+          password: ${{ secrets.R22_FTP_PASSWORD }}
+          # Specifies a local directory to sync from as if it were the git project root path.
+          # syncroot: # optional, default is .
+          # Additional options
+          # options: # optional, default is --auto-init
