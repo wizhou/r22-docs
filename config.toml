@@ -11,6 +11,8 @@ disableKinds = ['taxonomy', 'taxonomyTerm']
 disablePathToLower = true
 enableGitInfo = true
 
+siteref = 'la r22'
+
 # Needed for mermaid/katex shortcodes
 [markup]
 [markup.goldmark.renderer]

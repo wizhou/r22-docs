@@ -1,7 +1,8 @@
 ---
 title: Charte graphique
 type: docs
-weight: 20
+weight: 3
+bookCollapseSection: true
 ---
 
 # Charte graphique
