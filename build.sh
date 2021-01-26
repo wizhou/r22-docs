@@ -19,7 +19,7 @@ rm -rf .git/worktrees/public/
 echo "----------------------------------------"
 echo "🧙🏿‍♂️ Checking out build branch into public"
 echo "----------------------------------------"
-git worktree add -B build public bitbucket/build
+git worktree add -B build public origin/build
 
 echo "--------------------------"
 echo "🏹 Removing existing files"
