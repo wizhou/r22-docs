@@ -1,24 +1,537 @@
-<!doctype html><html lang=fr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Interface du Panel #  En elle-même, l&rsquo;interface est assez intuitive. Elle ressemble à tout autre logiciel d&rsquo;édition de contenu que vous avez déjà pu recontrer.
+<!DOCTYPE html>
+<html lang="fr" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Interface du Panel #  En elle-même, l&rsquo;interface est assez intuitive. Elle ressemble à tout autre logiciel d&rsquo;édition de contenu que vous avez déjà pu recontrer.
 Toutefois, la présente documentation fait régulièrement référence à quelques éléments important de son interface, aussi, il est important de les connaître et de savoir les utiliser.
- Haut de page #  Header #  La barre d&rsquo;en-tête noire, en haut du site internet, ou header, comporte des éléments de navigation importants du Panel."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Interface"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://docs.r22.fr/docs/panel/interface/"><title>Interface | R22 Documentation</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.621451d74bd2231e73fcbde6de2f358e5109686b4d325c1469432ce1ac1bc672.css integrity="sha256-YhRR10vSIx5z/L3m3i81jlEJaGtNMlwUaUMs4awbxnI="><script defer src=/fr.search.min.832b9d1a7f92b4198fbd6de1905842e5e2f470985b0899aeb5822141f156c4f2.js integrity="sha256-gyudGn+StBmPvW3hkFhC5eL0cJhbCJmutYIhQfFWxPI="></script><link rel=alternate type=application/rss+xml href=https://docs.r22.fr/docs/panel/interface/index.xml title="R22 Documentation"><meta name=robots content="noindex,follow"></head><body><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><nav><h2 class=book-brand><a href=/><span>R22 Documentation</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Rechercher aria-label=Rechercher maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><a href=/docs/panel/ class=collapsed>Le Panel</a><ul><li><a href=/docs/panel/connect/>Connexion et déconnexion</a><ul></ul></li><li><a href=/docs/panel/interface/ class=active>Interface</a><ul></ul></li><li><a href=/docs/panel/utilisateurs/ class=collapsed>Comptes utilisateur·ice·s</a></li></ul></li><li><a href=/docs/contenu/ class=collapsed>Le Contenu</a></li><li><a href=/docs/charte-graphique/ class=collapsed>Charte graphique</a></li><li><a href=/docs/glossaire/>Glossaire</a><ul></ul></li><li><a href=/docs/construction/>Mettre en ligne une contribution</a><ul></ul></li><li><a href=/docs/raccourcis/>Raccourcis</a><ul></ul></li></ul><ul><li><a href=/posts/>Blog</a></li><li><a href=https://r22.fr/ target=_blank rel=noopener>r22</a></li></ul></nav><script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
-<strong>Interface</strong>
-<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#interface-du-panel>Interface du Panel</a><ul><li><a href=#haut-de-page>Haut de page</a><ul><li><a href=#header>Header</a></li><li><a href=#hamburger--menu-déroulant>Hamburger & Menu déroulant</a></li></ul></li><li><a href=#fil-dariane-breadcrumb>Fil d&rsquo;Ariane (<em>Breadcrumb</em>)</a></li><li><a href=#recherche>Recherche</a></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=interface-du-panel>Interface du Panel
-<a class=anchor href=#interface-du-panel>#</a></h1><p>En elle-même, l&rsquo;interface est assez intuitive. Elle ressemble à tout autre logiciel d&rsquo;édition de contenu que vous avez déjà pu recontrer.</p><p>Toutefois, la présente documentation fait régulièrement référence à quelques éléments important de son interface, aussi, il est important de les connaître et de savoir les utiliser.</p><hr><h2 id=haut-de-page>Haut de page
-<a class=anchor href=#haut-de-page>#</a></h2><h3 id=header>Header
-<a class=anchor href=#header>#</a></h3><p>La barre d&rsquo;en-tête noire, en haut du site internet, ou <strong>header</strong>, comporte des éléments de navigation importants du Panel.</p><p><img src=header.png alt="Le header du panel"></p><p>Le <strong>header</strong> du Panel, à gauche, le <strong>hamburger</strong> qui donne accès au menu déroulant, au centre, le chemin d&rsquo;arborescence et à droite, la loupe donnant accès à la recherche.</p><h3 id=hamburger--menu-déroulant>Hamburger & Menu déroulant
-<a class=anchor href=#hamburger--menu-d%c3%a9roulant>#</a></h3><p>À gauche de celle-ci, vous trouverez le bouton <strong>hamburger</strong> qui vous permet d’accéder au <strong>menu déroulant</strong> du site. Ce menu liste les sections principales :</p><div class="book-columns flex flex-wrap"><div class="flex-even markdown-inner"><img src=logout.png alt="Le menu déroulant du Panel"></div><div class="flex-even markdown-inner"><table><thead><tr><th>Bouton</th><th>Description</th></tr></thead><tbody><tr><td><code>Site</code></td><td>Le <strong>contenu du site internet</strong></td></tr><tr><td><code>Utilisateurs</code></td><td>Les <a href=/docs/panel/utilisateurs/>comptes utilisateurs</a> du site</td></tr><tr><td><code>Paramètres</code></td><td>Les <strong>paramètres du site internet</strong></td></tr><tr><td><code>Votre compte</code></td><td>La page du <a href=/docs/panel/utilisateurs/>compte utilisateur</a> que vous employez actuellement</td></tr><tr><td><code>Se déconnecter</code></td><td>La possibilité de <a href=/docs/panel/connect/>se déconnecter</a> du Panel</td></tr></tbody></table></div></div><hr><h2 id=fil-dariane-breadcrumb>Fil d&rsquo;Ariane (<em>Breadcrumb</em>)
-<a class=anchor href=#fil-dariane-breadcrumb>#</a></h2><p>Au centre du <strong>header</strong> est affiché le <strong>Fil d&rsquo;Ariane</strong>, c&rsquo;est à dire la liste des pages parentes<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> à la page dans laquelle vous vous trouvez. Dit autrement, c’est le chemin des pages qui contiennent la page actuelle. Vous pouvez cliquer sur le nom d’une page pour vous y rendre.</p><p>Dans l&rsquo;exemple suivant, on retrouve la racine du site, la page <code>Antennes</code>, l&rsquo;antenne <code>Afrotopiques</code> et son programme <code>Rencontres Afrotopiques</code>.</p><script src=/mermaid.min.js></script><script>mermaid.initialize({flowchart:{useMaxWidth:true}});</script><p class=mermaid>graph LR
+ Haut de page #  Header #  La barre d&rsquo;en-tête noire, en haut du site internet, ou header, comporte des éléments de navigation importants du Panel.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Interface" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://docs.r22.fr/docs/panel/interface/" />
+
+<title>Interface | R22 Documentation</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.621451d74bd2231e73fcbde6de2f358e5109686b4d325c1469432ce1ac1bc672.css" integrity="sha256-YhRR10vSIx5z/L3m3i81jlEJaGtNMlwUaUMs4awbxnI=">
+<script defer src="/fr.search.min.bdca134f961e63de024ade751560136b57693a831778ff29443c18c022404ab4.js" integrity="sha256-vcoTT5YeY94CSt51FWATa1dpOoMXeP8pRDwYwCJASrQ="></script>
+<link rel="alternate" type="application/rss+xml" href="https://docs.r22.fr/docs/panel/interface/index.xml" title="R22 Documentation" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  <meta name='robots' content='noindex,follow'/>
+
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>R22 Documentation</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Rechercher" aria-label="Rechercher" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/panel/" class="collapsed ">Le Panel</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/panel/connect/" class="">Connexion et déconnexion</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/panel/interface/" class="active">Interface</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/panel/utilisateurs/" class="collapsed ">Comptes utilisateur·ice·s</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/contenu/" class="collapsed ">Le Contenu</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/charte-graphique/" class="collapsed ">Charte graphique</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/glossaire/" class="">Glossaire</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/construction/" class="">Mettre en ligne une contribution</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/raccourcis/" class="">Raccourcis</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/" >
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://r22.fr/" target="_blank" rel="noopener">
+        r22
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Interface</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#interface-du-panel">Interface du Panel</a>
+      <ul>
+        <li><a href="#haut-de-page">Haut de page</a>
+          <ul>
+            <li><a href="#header">Header</a></li>
+            <li><a href="#hamburger--menu-déroulant">Hamburger &amp; Menu déroulant</a></li>
+          </ul>
+        </li>
+        <li><a href="#fil-dariane-breadcrumb">Fil d&rsquo;Ariane (<em>Breadcrumb</em>)</a></li>
+        <li><a href="#recherche">Recherche</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="interface-du-panel">
+  Interface du Panel
+  <a class="anchor" href="#interface-du-panel">#</a>
+</h1>
+<p>En elle-même, l&rsquo;interface est assez intuitive. Elle ressemble à tout autre logiciel d&rsquo;édition de contenu que vous avez déjà pu recontrer.</p>
+<p>Toutefois, la présente documentation fait régulièrement référence à quelques éléments important de son interface, aussi, il est important de les connaître et de savoir les utiliser.</p>
+<hr>
+<h2 id="haut-de-page">
+  Haut de page
+  <a class="anchor" href="#haut-de-page">#</a>
+</h2>
+<h3 id="header">
+  Header
+  <a class="anchor" href="#header">#</a>
+</h3>
+<p>La barre d&rsquo;en-tête noire, en haut du site internet, ou <strong>header</strong>, comporte des éléments de navigation importants du Panel.</p>
+<p>
+  <img src="header.png" alt="Le header du panel" /></p>
+<p>Le <strong>header</strong> du Panel, à gauche, le <strong>hamburger</strong> qui donne accès au menu déroulant, au centre, le chemin d&rsquo;arborescence et à droite, la loupe donnant accès à la recherche.</p>
+<h3 id="hamburger--menu-déroulant">
+  Hamburger &amp; Menu déroulant
+  <a class="anchor" href="#hamburger--menu-d%c3%a9roulant">#</a>
+</h3>
+<p>À gauche de celle-ci, vous trouverez le bouton <strong>hamburger</strong> qui vous permet d’accéder au <strong>menu déroulant</strong> du site. Ce menu liste les sections principales :</p>
+<div class="book-columns flex flex-wrap">
+  
+  <div class="flex-even markdown-inner">
+    <img src="logout.png" alt="Le menu déroulant du Panel">
+  </div>
+  
+  <div class="flex-even markdown-inner">
+    <table>
+<thead>
+<tr>
+<th>Bouton</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Site</code></td>
+<td>Le <strong>contenu du site internet</strong></td>
+</tr>
+<tr>
+<td><code>Utilisateurs</code></td>
+<td>Les <a href="/docs/panel/utilisateurs/">comptes utilisateurs</a> du site</td>
+</tr>
+<tr>
+<td><code>Paramètres</code></td>
+<td>Les <strong>paramètres du site internet</strong></td>
+</tr>
+<tr>
+<td><code>Votre compte</code></td>
+<td>La page du <a href="/docs/panel/utilisateurs/">compte utilisateur</a> que vous employez actuellement</td>
+</tr>
+<tr>
+<td><code>Se déconnecter</code></td>
+<td>La possibilité de <a href="/docs/panel/connect/">se déconnecter</a> du Panel</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+  
+</div>
+
+<hr>
+<h2 id="fil-dariane-breadcrumb">
+  Fil d&rsquo;Ariane (<em>Breadcrumb</em>)
+  <a class="anchor" href="#fil-dariane-breadcrumb">#</a>
+</h2>
+<p>Au centre du <strong>header</strong> est affiché le <strong>Fil d&rsquo;Ariane</strong>, c&rsquo;est  à dire la liste des pages parentes<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> à la page dans laquelle vous vous trouvez. Dit autrement, c’est le chemin des pages qui contiennent la page actuelle. Vous pouvez cliquer sur le nom d’une page pour vous y rendre.</p>
+<p>Dans l&rsquo;exemple suivant, on retrouve la racine du site, la page <code>Antennes</code>, l&rsquo;antenne <code>Afrotopiques</code> et son programme <code>Rencontres Afrotopiques</code>.</p>
+
+
+<script src="/mermaid.min.js"></script>
+<script>
+mermaid.initialize({
+  flowchart: { useMaxWidth:true }
+});
+</script>
+
+
+
+<p class="mermaid">
+graph LR
 1[r22]
 2[Antennes]
 3[Afrotopiques]
 4[Rencontres Afrotopiques]
+
 1--Parente de--> 2
 2--Parente de-->3
 3--Parente de-->4
+
 4--Enfant de-->3
 3--Enfant de-->2
-2--Enfant de-->1</p><p><img src=path.png alt="Le chemin d&amp;rsquo;arborescence"></p><h2 id=recherche>Recherche
-<a class=anchor href=#recherche>#</a></h2><p>Le bouton en forme de <strong>loupe</strong> vous permet d’accéder à la recherche du Panel.</p><p>Grâce à elle, vous pouvez rechercher des pages précises grâce à une liste de mot clés. Ainsi, vous pouvez accéder plus rapidement à des sections importantes du site internet. Elle est très pratique pour trouver des pages profondément enfouies dans l’arborescence du site.</p><p>Une recherche sur <code>ding</code> donne une liste des pages ou ce mot est référencé.</p><p><img src=search.png alt="Le formulaire de recherche"></p><section class=footnotes role=doc-endnotes><hr><ol><li id=fn:1 role=doc-endnote><p>On parle de page parente concernant une page qui contient des sous-pages, et de page enfant pour une sous-page d&rsquo;une page parente. Un page peut être parente de sous-pages et elle-même sous-page d&rsquo;une autre page partente. <a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></section></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/wizhou/r22-docs/commit/9f0bb66470b1f9398127dbf02ea6f30e3f46477d title="Dernière modification par wizhou | July 22, 2020" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>July 22, 2020</span></a></div><div><a class="flex align-center" href=https://github.com/wizhou/r22-docs/edit/master/content//docs/panel/interface/_index.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
-<span>Modifier cette page</span></a></div></div></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><nav id=TableOfContents><ul><li><a href=#interface-du-panel>Interface du Panel</a><ul><li><a href=#haut-de-page>Haut de page</a><ul><li><a href=#header>Header</a></li><li><a href=#hamburger--menu-déroulant>Hamburger & Menu déroulant</a></li></ul></li><li><a href=#fil-dariane-breadcrumb>Fil d&rsquo;Ariane (<em>Breadcrumb</em>)</a></li><li><a href=#recherche>Recherche</a></li></ul></li></ul></nav></aside></main></body></html>
+2--Enfant de-->1
+</p>
+
+<p>
+  <img src="path.png" alt="Le chemin d&amp;rsquo;arborescence" /></p>
+<h2 id="recherche">
+  Recherche
+  <a class="anchor" href="#recherche">#</a>
+</h2>
+<p>Le bouton en forme de <strong>loupe</strong> vous permet d’accéder à la recherche du Panel.</p>
+<p>Grâce à elle, vous pouvez rechercher des pages précises grâce à une liste de mot clés. Ainsi, vous pouvez accéder plus rapidement à des sections importantes du site internet. Elle est très pratique pour trouver des pages profondément enfouies dans l’arborescence du site.</p>
+<p>Une recherche sur <code>ding</code> donne une liste des pages ou ce mot est référencé.</p>
+<p>
+  <img src="search.png" alt="Le formulaire de recherche" /></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>On parle de page parente concernant une page qui contient des sous-pages, et de page enfant pour une sous-page d&rsquo;une page parente. Un page peut être parente de sous-pages et elle-même sous-page d&rsquo;une autre page partente. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/wizhou/r22-docs/commit/9f0bb66470b1f9398127dbf02ea6f30e3f46477d" title='Dernière modification par wizhou | July 22, 2020' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>July 22, 2020</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/wizhou/r22-docs/edit/master/content//docs/panel/interface/_index.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Modifier cette page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#interface-du-panel">Interface du Panel</a>
+      <ul>
+        <li><a href="#haut-de-page">Haut de page</a>
+          <ul>
+            <li><a href="#header">Header</a></li>
+            <li><a href="#hamburger--menu-déroulant">Hamburger &amp; Menu déroulant</a></li>
+          </ul>
+        </li>
+        <li><a href="#fil-dariane-breadcrumb">Fil d&rsquo;Ariane (<em>Breadcrumb</em>)</a></li>
+        <li><a href="#recherche">Recherche</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

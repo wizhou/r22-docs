@@ -1,61 +1,555 @@
-<!doctype html><html lang=fr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Contenu dynamique #  Le Markdown possède sa propre extension au sein de Kirby, nommé le Kirbytext. Il vous permet de charger du contenu dynamiquement au sein des articles du site.
+<!DOCTYPE html>
+<html lang="fr" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contenu dynamique #  Le Markdown possède sa propre extension au sein de Kirby, nommé le Kirbytext. Il vous permet de charger du contenu dynamiquement au sein des articles du site.
 Le Kirbytext vous permet d’employer les éléments de formatage suivants :
 Date #  Pour ajouter une date dynamique au texte, vous pouvez utiliser le balisage suivant :
-Afficher l’année actuelle (date: year) Afficher n’importe quelle date avec un formatage de date en chaîne de caractère PHP (date: d."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Contenu dynamique"><meta property="og:description" content="Contenu dynamique #  Le Markdown possède sa propre extension au sein de Kirby, nommé le Kirbytext. Il vous permet de charger du contenu dynamiquement au sein des articles du site.
+Afficher l’année actuelle (date: year) Afficher n’importe quelle date avec un formatage de date en chaîne de caractère PHP (date: d.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Contenu dynamique" />
+<meta property="og:description" content="Contenu dynamique #  Le Markdown possède sa propre extension au sein de Kirby, nommé le Kirbytext. Il vous permet de charger du contenu dynamiquement au sein des articles du site.
 Le Kirbytext vous permet d’employer les éléments de formatage suivants :
 Date #  Pour ajouter une date dynamique au texte, vous pouvez utiliser le balisage suivant :
-Afficher l’année actuelle (date: year) Afficher n’importe quelle date avec un formatage de date en chaîne de caractère PHP (date: d."><meta property="og:type" content="article"><meta property="og:url" content="https://docs.r22.fr/docs/contenu/kirbytext/"><meta property="article:modified_time" content="2020-07-22T17:53:49+02:00"><title>Contenu dynamique | R22 Documentation</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.621451d74bd2231e73fcbde6de2f358e5109686b4d325c1469432ce1ac1bc672.css integrity="sha256-YhRR10vSIx5z/L3m3i81jlEJaGtNMlwUaUMs4awbxnI="><script defer src=/fr.search.min.832b9d1a7f92b4198fbd6de1905842e5e2f470985b0899aeb5822141f156c4f2.js integrity="sha256-gyudGn+StBmPvW3hkFhC5eL0cJhbCJmutYIhQfFWxPI="></script><meta name=robots content="noindex,follow"></head><body><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><nav><h2 class=book-brand><a href=/><span>R22 Documentation</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Rechercher aria-label=Rechercher maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><a href=/docs/panel/ class=collapsed>Le Panel</a></li><li><a href=/docs/contenu/ class=collapsed>Le Contenu</a><ul><li><a href=/docs/contenu/pages/ class=collapsed>Pages et publications</a></li><li><a href=/docs/contenu/markdown/>Le Markdown</a><ul></ul></li><li><a href=/docs/contenu/kirbytext/ class=active>Contenu dynamique</a></li><li><a href=/docs/contenu/fichiers/ class=collapsed>Fichiers</a></li></ul></li><li><a href=/docs/charte-graphique/ class=collapsed>Charte graphique</a></li><li><a href=/docs/glossaire/>Glossaire</a><ul></ul></li><li><a href=/docs/construction/>Mettre en ligne une contribution</a><ul></ul></li><li><a href=/docs/raccourcis/>Raccourcis</a><ul></ul></li></ul><ul><li><a href=/posts/>Blog</a></li><li><a href=https://r22.fr/ target=_blank rel=noopener>r22</a></li></ul></nav><script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
-<strong>Contenu dynamique</strong>
-<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#contenu-dynamique>Contenu dynamique</a><ul><li><a href=#date>Date</a></li><li><a href=#téléphone>Téléphone</a></li><li><a href=#fichier>Fichier</a></li><li><a href=#image>Image</a></li><li><a href=#adresses-emails>Adresses emails</a></li><li><a href=#lien>Lien</a></li><li><a href=#audio>Audio</a></li><li><a href=#vidéo>Vidéo</a></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=contenu-dynamique>Contenu dynamique
-<a class=anchor href=#contenu-dynamique>#</a></h1><p>Le Markdown possède sa propre extension au sein de
-<a href=/docs/technique/panel>Kirby</a>, nommé le <strong>Kirbytext</strong>. Il vous permet de charger du contenu dynamiquement au sein des articles du site.</p><p>Le <strong>Kirbytext</strong> vous permet d’employer les éléments de formatage suivants :</p><h2 id=date>Date
-<a class=anchor href=#date>#</a></h2><p>Pour ajouter une <strong>date dynamique</strong> au texte, vous pouvez utiliser le balisage suivant :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>Afficher l’année actuelle
+Afficher l’année actuelle (date: year) Afficher n’importe quelle date avec un formatage de date en chaîne de caractère PHP (date: d." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://docs.r22.fr/docs/contenu/kirbytext/" />
+<meta property="article:modified_time" content="2020-07-22T17:53:49+02:00" />
+<title>Contenu dynamique | R22 Documentation</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.621451d74bd2231e73fcbde6de2f358e5109686b4d325c1469432ce1ac1bc672.css" integrity="sha256-YhRR10vSIx5z/L3m3i81jlEJaGtNMlwUaUMs4awbxnI=">
+<script defer src="/fr.search.min.bdca134f961e63de024ade751560136b57693a831778ff29443c18c022404ab4.js" integrity="sha256-vcoTT5YeY94CSt51FWATa1dpOoMXeP8pRDwYwCJASrQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  <meta name='robots' content='noindex,follow'/>
+
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>R22 Documentation</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Rechercher" aria-label="Rechercher" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/panel/" class="collapsed ">Le Panel</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/contenu/" class="collapsed ">Le Contenu</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/contenu/pages/" class="collapsed ">Pages et publications</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/contenu/markdown/" class="">Le Markdown</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/contenu/kirbytext/" class="active">Contenu dynamique</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/contenu/fichiers/" class="collapsed ">Fichiers</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/charte-graphique/" class="collapsed ">Charte graphique</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/glossaire/" class="">Glossaire</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/construction/" class="">Mettre en ligne une contribution</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/raccourcis/" class="">Raccourcis</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/" >
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://r22.fr/" target="_blank" rel="noopener">
+        r22
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Contenu dynamique</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#contenu-dynamique">Contenu dynamique</a>
+      <ul>
+        <li><a href="#date">Date</a></li>
+        <li><a href="#téléphone">Téléphone</a></li>
+        <li><a href="#fichier">Fichier</a></li>
+        <li><a href="#image">Image</a></li>
+        <li><a href="#adresses-emails">Adresses emails</a></li>
+        <li><a href="#lien">Lien</a></li>
+        <li><a href="#audio">Audio</a></li>
+        <li><a href="#vidéo">Vidéo</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="contenu-dynamique">
+  Contenu dynamique
+  <a class="anchor" href="#contenu-dynamique">#</a>
+</h1>
+<p>Le Markdown possède sa propre extension au sein de 
+  <a href="/docs/technique/panel">Kirby</a>, nommé le <strong>Kirbytext</strong>. Il vous permet de charger du contenu dynamiquement au sein des articles du site.</p>
+<p>Le <strong>Kirbytext</strong> vous permet d’employer les éléments de formatage suivants :</p>
+<h2 id="date">
+  Date
+  <a class="anchor" href="#date">#</a>
+</h2>
+<p>Pour ajouter une <strong>date dynamique</strong> au texte, vous pouvez utiliser le balisage suivant :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">Afficher l’année actuelle
 
 (date: year)
 
 Afficher n’importe quelle date avec un formatage de date en chaîne de caractère PHP
 
 (date: d.m.Y H:i:s)
-</code></pre></div><p>Pour en savoir plus sur le formatage de date PHP, rendez-vous sur la
-<a href=https://www.php.net/manual/en/function.date.php>documentation de PHP</a>.</p><p>Pour plus d’option, visitez la
-<a href=https://getkirby.com/docs/reference/text/kirbytags/date>documentation de Kirby</a> (en anglais).</p><hr><h2 id=téléphone>Téléphone
-<a class=anchor href=#t%c3%a9l%c3%a9phone>#</a></h2><p>Vous pouvez intégrer des <strong>numéros de téléphones</strong> cliquables dans vos textes grâce au balisage suivant.</p><p>Pour afficher un numéro de téléphone seul seul :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(tel: +33612345678)
-</code></pre></div><p>Pour afficher un numéro de téléphone avec du texte :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(tel: +33612345678 text: Nous appeller)
-</code></pre></div><p>Pour plus d’option, visitez
-<a href=https://getkirby.com/docs/reference/text/kirbytags/tel>la documentation de Kirby</a> (en anglais).</p><hr><h2 id=fichier>Fichier
-<a class=anchor href=#fichier>#</a></h2><p>Vous pouvez inclure le lien d’un <strong>fichier à télécharger</strong> grâce au balisage suivant.</p><p>Pour afficher un fichier importé dans la page en cours, utilisez simplement le nom du fichier.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(file: monbeaupdf.pdf)
-</code></pre></div><p>Pour donner un texte au lien de téléchargement :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(file: monbeaupdf.pdf text: Télécharger mon beau pdf)
-</code></pre></div><p>Pour lier un fichier d’une autre page du site internet :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(file: une/autre/page/monbeaupdf.pdf text: Télécharger mon beau pdf)
-</code></pre></div><p>Pour plus d’option, visitez la
-<a href=https://getkirby.com/docs/reference/text/kirbytags/file>documentation de Kirby</a> (en anglais).</p><hr><h2 id=image>Image
-<a class=anchor href=#image>#</a></h2><p>Pour <strong>incorporer une image</strong>, utilisez le balisage suivant.</p><p>Pour afficher une image importée dans la page en cours, utilisez simplement le nom de l’image :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(image: masuperimage.jpg)
-</code></pre></div><p>Pour utiliser une image d’une autre page :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(image: une/autre/page/masuperimage.jpg)
-</code></pre></div><p>Pour afficher une image avec du texte alternatif :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(image: masuperimage alt: C’est une super image)
-</code></pre></div><p>Pour afficher une image avec une légende :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(image: masuperimage caption: J’ai prise cette image dans le parc)
-</code></pre></div><p>Pour plus d’option, visitez
-<a href=https://getkirby.com/docs/reference/text/kirbytags/image>la documentation de Kirby</a> (en anglais).</p><hr><h2 id=adresses-emails>Adresses emails
-<a class=anchor href=#adresses-emails>#</a></h2><p>Similaires aux
-<a href=/docs/contenu/markdown/#adresses-emails>emails créés en Markdown</a> vous pouvez créer des liens emails détaillés à l’intérieur des textes grâce au <strong>Kirbytext</strong>.</p><p>Afficher un email sans texte de lien :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(email:info@r22)
-</code></pre></div><p>Ce qui affichera : <a href=mailto:info@r22>info@r22</a></p><p>Afficher un email avec du texte de lien :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(email: info@r22.fr text: Envoyez-moi un email)
-</code></pre></div><p>Ce qui affichera :
-<a href=mailto:info@r22.fr>Envoyez-moi un email</a></p><p>Pour plus d’option, visitez la
-<a href=https://getkirby.com/docs/reference/text/kirbytags/email>documentation de Kirby</a> (en anglais).</p><hr><h2 id=lien>Lien
-<a class=anchor href=#lien>#</a></h2><p>Similaires aux
-<a href=/docs/contenu/markdown/#liens>liens créés en Markdown</a> vous pouvez créer des liens détaillés à l’intérieur des textes grâce au <strong>Kirbytext</strong>.</p><p>Pour afficher un lien avec du texte :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(link: http://wikipedia.org text: Wikipedia)
-</code></pre></div><p>Pour afficher un lien interne au site internet :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(link: une/page text: Lien vers une page interne)
-</code></pre></div><p>Pour afficher un lien dans une langue spécifique :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(link: une/page lang: de)
-</code></pre></div><p>Pour afficher un lien avec une ancre :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(link: #une-section text: Lien vers une section de la même page)
-</code></pre></div><p>Pour plus d’option, visitez
-<a href=https://getkirby.com/docs/reference/text/kirbytags/link>la documentation de Kirby</a> (en anglais).</p><hr><h2 id=audio>Audio
-<a class=anchor href=#audio>#</a></h2><p>Pour afficher un <strong>player audio</strong> au sein d’une page, utilisez le balisage suivant.</p><blockquote class="book-hint warning">Cette fonctionnalité est encore en développement, elle peut ne pas fonctionner comme attendu.</blockquote><p>Pour un fichier audio présent sur la page :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(audio: monfichieraudio.mp3)
-</code></pre></div><p>Pour un fichier audio présent sur une autre page :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(audio: une/autre/page/monfichieraudio.mp3)
-</code></pre></div><p>Pour un fichier audio avec une légende :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(audio: monfichieraudio.mp3 caption: Écoutez mon fichier audio !)
-</code></pre></div><hr><h2 id=vidéo>Vidéo
-<a class=anchor href=#vid%c3%a9o>#</a></h2><p>Vous pouvez intégrer des vidéos provenant de Youtube ou de Vimeo grâce au balisage suivant.</p><p>Intégrer une vidéo depuis <strong>Youtube</strong> :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(video: http://www.youtube.com/watch?v=lLuc6rtWkrM)
-</code></pre></div><p>Intégrer une vidéo depuis <strong>Vimeo</strong> :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(video: http://vimeo.com/3432886)
-</code></pre></div><p>Intégrer une vidéo avec <strong>une légende</strong> :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(video: http://youtu.be/lLuc6rtWkrM caption: This is a really nice video)
-</code></pre></div><p>Intégrer une vidéo avec des indications de taille pour l’iframe :</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-md data-lang=md>(video: http://vimeo.com/3432886 width: 300 height: 200)
-</code></pre></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/wizhou/r22-docs/commit/9f0bb66470b1f9398127dbf02ea6f30e3f46477d title="Dernière modification par wizhou | July 22, 2020" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>July 22, 2020</span></a></div><div><a class="flex align-center" href=https://github.com/wizhou/r22-docs/edit/master/content//docs/contenu/kirbytext.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
-<span>Modifier cette page</span></a></div></div></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><nav id=TableOfContents><ul><li><a href=#contenu-dynamique>Contenu dynamique</a><ul><li><a href=#date>Date</a></li><li><a href=#téléphone>Téléphone</a></li><li><a href=#fichier>Fichier</a></li><li><a href=#image>Image</a></li><li><a href=#adresses-emails>Adresses emails</a></li><li><a href=#lien>Lien</a></li><li><a href=#audio>Audio</a></li><li><a href=#vidéo>Vidéo</a></li></ul></li></ul></nav></aside></main></body></html>
+</code></pre></div><p>Pour en savoir plus sur le formatage de date PHP, rendez-vous sur la 
+  <a href="https://www.php.net/manual/en/function.date.php">documentation de PHP</a>.</p>
+<p>Pour plus d’option, visitez la 
+  <a href="https://getkirby.com/docs/reference/text/kirbytags/date">documentation de Kirby</a> (en anglais).</p>
+<hr>
+<h2 id="téléphone">
+  Téléphone
+  <a class="anchor" href="#t%c3%a9l%c3%a9phone">#</a>
+</h2>
+<p>Vous pouvez intégrer des <strong>numéros de téléphones</strong> cliquables dans vos textes grâce au balisage suivant.</p>
+<p>Pour afficher un numéro de téléphone seul seul :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(tel: +33612345678)
+</code></pre></div><p>Pour afficher un numéro de téléphone avec du texte :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(tel: +33612345678 text: Nous appeller)
+</code></pre></div><p>Pour plus d’option, visitez 
+  <a href="https://getkirby.com/docs/reference/text/kirbytags/tel">la documentation de Kirby</a> (en anglais).</p>
+<hr>
+<h2 id="fichier">
+  Fichier
+  <a class="anchor" href="#fichier">#</a>
+</h2>
+<p>Vous pouvez inclure le lien d’un <strong>fichier à télécharger</strong> grâce au balisage suivant.</p>
+<p>Pour afficher un fichier importé dans la page en cours, utilisez simplement le nom du fichier.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(file: monbeaupdf.pdf)
+</code></pre></div><p>Pour donner un texte au lien de téléchargement :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(file: monbeaupdf.pdf text: Télécharger mon beau pdf)
+</code></pre></div><p>Pour lier un fichier d’une autre page du site internet :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(file: une/autre/page/monbeaupdf.pdf text: Télécharger mon beau pdf)
+</code></pre></div><p>Pour plus d’option, visitez la 
+  <a href="https://getkirby.com/docs/reference/text/kirbytags/file">documentation de Kirby</a> (en anglais).</p>
+<hr>
+<h2 id="image">
+  Image
+  <a class="anchor" href="#image">#</a>
+</h2>
+<p>Pour <strong>incorporer une image</strong>, utilisez le balisage suivant.</p>
+<p>Pour afficher une image importée dans la page en cours, utilisez simplement le nom de l’image :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(image: masuperimage.jpg)
+</code></pre></div><p>Pour utiliser une image d’une autre page :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(image: une/autre/page/masuperimage.jpg)
+</code></pre></div><p>Pour afficher une image avec du texte alternatif :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(image: masuperimage alt: C’est une super image)
+</code></pre></div><p>Pour afficher une image avec une légende :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(image: masuperimage caption: J’ai prise cette image dans le parc)
+</code></pre></div><p>Pour plus d’option, visitez 
+  <a href="https://getkirby.com/docs/reference/text/kirbytags/image">la documentation de Kirby</a> (en anglais).</p>
+<hr>
+<h2 id="adresses-emails">
+  Adresses emails
+  <a class="anchor" href="#adresses-emails">#</a>
+</h2>
+<p>Similaires aux 
+  <a href="/docs/contenu/markdown/#adresses-emails">emails créés en Markdown</a> vous pouvez créer des liens emails détaillés à l’intérieur des textes grâce au <strong>Kirbytext</strong>.</p>
+<p>Afficher un email sans texte de lien :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(email:info@r22)
+</code></pre></div><p>Ce qui affichera : <a href="mailto:info@r22">info@r22</a></p>
+<p>Afficher un email avec du texte de lien :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(email: info@r22.fr text: Envoyez-moi un email)
+</code></pre></div><p>Ce qui affichera : 
+  <a href="mailto:info@r22.fr">Envoyez-moi un email</a></p>
+<p>Pour plus d’option, visitez la 
+  <a href="https://getkirby.com/docs/reference/text/kirbytags/email">documentation de Kirby</a> (en anglais).</p>
+<hr>
+<h2 id="lien">
+  Lien
+  <a class="anchor" href="#lien">#</a>
+</h2>
+<p>Similaires aux 
+  <a href="/docs/contenu/markdown/#liens">liens créés en Markdown</a> vous pouvez créer des liens détaillés à l’intérieur des textes grâce au <strong>Kirbytext</strong>.</p>
+<p>Pour afficher un lien avec du texte :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(link: http://wikipedia.org text: Wikipedia)
+</code></pre></div><p>Pour afficher un lien interne au site internet :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(link: une/page text: Lien vers une page interne)
+</code></pre></div><p>Pour afficher un lien dans une langue spécifique :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(link: une/page lang: de)
+</code></pre></div><p>Pour afficher un lien avec une ancre :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(link: #une-section text: Lien vers une section de la même page)
+</code></pre></div><p>Pour plus d’option, visitez 
+  <a href="https://getkirby.com/docs/reference/text/kirbytags/link">la documentation de Kirby</a> (en anglais).</p>
+<hr>
+<h2 id="audio">
+  Audio
+  <a class="anchor" href="#audio">#</a>
+</h2>
+<p>Pour afficher un <strong>player audio</strong> au sein d’une page, utilisez le balisage suivant.</p>
+<blockquote class="book-hint warning">
+  Cette fonctionnalité est encore en développement, elle peut ne pas fonctionner comme attendu.
+</blockquote>
+
+<p>Pour un fichier audio présent sur la page :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(audio: monfichieraudio.mp3)
+</code></pre></div><p>Pour un fichier audio présent sur une autre page :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(audio: une/autre/page/monfichieraudio.mp3)
+</code></pre></div><p>Pour un fichier audio avec une légende :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(audio: monfichieraudio.mp3 caption: Écoutez mon fichier audio !)
+</code></pre></div><hr>
+<h2 id="vidéo">
+  Vidéo
+  <a class="anchor" href="#vid%c3%a9o">#</a>
+</h2>
+<p>Vous pouvez intégrer des vidéos provenant de Youtube ou de Vimeo grâce au balisage suivant.</p>
+<p>Intégrer une vidéo depuis <strong>Youtube</strong> :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(video: http://www.youtube.com/watch?v=lLuc6rtWkrM)
+</code></pre></div><p>Intégrer une vidéo depuis <strong>Vimeo</strong> :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(video: http://vimeo.com/3432886)
+</code></pre></div><p>Intégrer une vidéo avec <strong>une légende</strong> :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(video: http://youtu.be/lLuc6rtWkrM caption: This is a really nice video)
+</code></pre></div><p>Intégrer une vidéo avec des indications de taille pour l’iframe :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">(video: http://vimeo.com/3432886 width: 300 height: 200)
+</code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/wizhou/r22-docs/commit/9f0bb66470b1f9398127dbf02ea6f30e3f46477d" title='Dernière modification par wizhou | July 22, 2020' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>July 22, 2020</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/wizhou/r22-docs/edit/master/content//docs/contenu/kirbytext.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Modifier cette page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#contenu-dynamique">Contenu dynamique</a>
+      <ul>
+        <li><a href="#date">Date</a></li>
+        <li><a href="#téléphone">Téléphone</a></li>
+        <li><a href="#fichier">Fichier</a></li>
+        <li><a href="#image">Image</a></li>
+        <li><a href="#adresses-emails">Adresses emails</a></li>
+        <li><a href="#lien">Lien</a></li>
+        <li><a href="#audio">Audio</a></li>
+        <li><a href="#vidéo">Vidéo</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

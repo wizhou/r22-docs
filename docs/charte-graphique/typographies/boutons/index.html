@@ -1,70 +1,833 @@
-<!doctype html><html lang=fr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Boutons #  Attention : Cette page n&rsquo;est pas complète. La transition de la documentation en v2 à laissé des incohérences dans cette page !  Cette section présente des boutons simples d&rsquo;usages en différents styles, tailles et types.
+<!DOCTYPE html>
+<html lang="fr" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Boutons #  Attention : Cette page n&rsquo;est pas complète. La transition de la documentation en v2 à laissé des incohérences dans cette page !  Cette section présente des boutons simples d&rsquo;usages en différents styles, tailles et types.
 Core Button #  Bouton de défault Bouton gras Bouton primaire Bouton alternatif Bouton secondaire Lien
-<button class=&#34;btn&#34;>Bouton de défault</button> <button class=&#34;btn btn--bold&#34;>Bouton gras</button> <button class=&#34;btn btn--primaire&#34;>Bouton primaire</button> <button class=&#34;btn btn--primaire--alt&#34;>Bouton primaire mediant</button> <button class=&#34;btn btn--secondaire&#34;>Bouton secondaire</button> <a href=&#34;some link&#34; class=&#34;btn btn--link&#34;>Lien</a> Couleur des boutons #  Les couleurs sont attribués via le color."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Boutons"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://docs.r22.fr/docs/charte-graphique/typographies/boutons/"><title>Boutons | R22 Documentation</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.621451d74bd2231e73fcbde6de2f358e5109686b4d325c1469432ce1ac1bc672.css integrity="sha256-YhRR10vSIx5z/L3m3i81jlEJaGtNMlwUaUMs4awbxnI="><script defer src=/fr.search.min.832b9d1a7f92b4198fbd6de1905842e5e2f470985b0899aeb5822141f156c4f2.js integrity="sha256-gyudGn+StBmPvW3hkFhC5eL0cJhbCJmutYIhQfFWxPI="></script><link rel=alternate type=application/rss+xml href=https://docs.r22.fr/docs/charte-graphique/typographies/boutons/index.xml title="R22 Documentation"><meta name=robots content="noindex,follow"></head><body><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><nav><h2 class=book-brand><a href=/><span>R22 Documentation</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Rechercher aria-label=Rechercher maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><a href=/docs/panel/ class=collapsed>Le Panel</a></li><li><a href=/docs/contenu/ class=collapsed>Le Contenu</a></li><li><a href=/docs/charte-graphique/ class=collapsed>Charte graphique</a><ul><li><a href=/docs/charte-graphique/logotype/>Logotype</a><ul></ul></li><li><a href=/docs/charte-graphique/couleurs/ class=collapsed>Couleurs</a></li><li><a href=/docs/charte-graphique/typographies/ class=collapsed>Typographies</a><ul><li><a href=/docs/charte-graphique/typographies/polices/>Polices de caractères</a><ul></ul></li><li><a href=/docs/charte-graphique/typographies/composition/>Composition générale</a><ul></ul></li><li><a href=/docs/charte-graphique/typographies/titraille/>Titraille</a><ul></ul></li><li><a href=/docs/charte-graphique/typographies/paragraphes/>Paragraphes</a><ul></ul></li><li><a href=/docs/charte-graphique/typographies/semantique/>Sémantique</a><ul></ul></li><li><a href=/docs/charte-graphique/typographies/boutons/ class=active>Boutons</a><ul></ul></li><li><a href=/docs/charte-graphique/typographies/triche/>Feuille de triche</a><ul></ul></li></ul></li><li><a href=/docs/charte-graphique/iconographie/>Iconographie</a><ul></ul></li></ul></li><li><a href=/docs/glossaire/>Glossaire</a><ul></ul></li><li><a href=/docs/construction/>Mettre en ligne une contribution</a><ul></ul></li><li><a href=/docs/raccourcis/>Raccourcis</a><ul></ul></li></ul><ul><li><a href=/posts/>Blog</a></li><li><a href=https://r22.fr/ target=_blank rel=noopener>r22</a></li></ul></nav><script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
-<strong>Boutons</strong>
-<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#boutons>Boutons</a><ul><li><a href=#core-button>Core Button</a></li><li><a href=#couleur-des-boutons>Couleur des boutons</a></li><li><a href=#tailles-des-boutons>Tailles des boutons</a></li><li><a href=#formes-des-boutons>Formes des boutons</a></li><li><a href=#êtat-des-boutons>Êtat des boutons</a></li><li><a href=#groupe-de-bouton>Groupe de bouton</a></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=boutons>Boutons
-<a class=anchor href=#boutons>#</a></h1><blockquote class="book-hint danger"><strong>Attention</strong> : Cette page n&rsquo;est pas complète. La transition de la documentation en v2 à laissé des incohérences dans cette page !</blockquote><p>Cette section présente des boutons simples d&rsquo;usages en différents styles, tailles et types.</p><h2 id=core-button>Core Button
-<a class=anchor href=#core-button>#</a></h2><p><button class=btn>Bouton de défault</button>
+&lt;button class=&quot;btn&quot;&gt;Bouton de défault&lt;/button&gt; &lt;button class=&quot;btn btn--bold&quot;&gt;Bouton gras&lt;/button&gt; &lt;button class=&quot;btn btn--primaire&quot;&gt;Bouton primaire&lt;/button&gt; &lt;button class=&quot;btn btn--primaire--alt&quot;&gt;Bouton primaire mediant&lt;/button&gt; &lt;button class=&quot;btn btn--secondaire&quot;&gt;Bouton secondaire&lt;/button&gt; &lt;a href=&quot;some link&quot; class=&quot;btn btn--link&quot;&gt;Lien&lt;/a&gt; Couleur des boutons #  Les couleurs sont attribués via le color.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Boutons" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://docs.r22.fr/docs/charte-graphique/typographies/boutons/" />
+
+<title>Boutons | R22 Documentation</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.621451d74bd2231e73fcbde6de2f358e5109686b4d325c1469432ce1ac1bc672.css" integrity="sha256-YhRR10vSIx5z/L3m3i81jlEJaGtNMlwUaUMs4awbxnI=">
+<script defer src="/fr.search.min.bdca134f961e63de024ade751560136b57693a831778ff29443c18c022404ab4.js" integrity="sha256-vcoTT5YeY94CSt51FWATa1dpOoMXeP8pRDwYwCJASrQ="></script>
+<link rel="alternate" type="application/rss+xml" href="https://docs.r22.fr/docs/charte-graphique/typographies/boutons/index.xml" title="R22 Documentation" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  <meta name='robots' content='noindex,follow'/>
+
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>R22 Documentation</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Rechercher" aria-label="Rechercher" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/panel/" class="collapsed ">Le Panel</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/contenu/" class="collapsed ">Le Contenu</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/charte-graphique/" class="collapsed ">Charte graphique</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/charte-graphique/logotype/" class="">Logotype</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/charte-graphique/couleurs/" class="collapsed ">Couleurs</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/charte-graphique/typographies/" class="collapsed ">Typographies</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/charte-graphique/typographies/polices/" class="">Polices de caractères</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/charte-graphique/typographies/composition/" class="">Composition générale</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/charte-graphique/typographies/titraille/" class="">Titraille</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/charte-graphique/typographies/paragraphes/" class="">Paragraphes</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/charte-graphique/typographies/semantique/" class="">Sémantique</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/charte-graphique/typographies/boutons/" class="active">Boutons</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/charte-graphique/typographies/triche/" class="">Feuille de triche</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/charte-graphique/iconographie/" class="">Iconographie</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/glossaire/" class="">Glossaire</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/construction/" class="">Mettre en ligne une contribution</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/raccourcis/" class="">Raccourcis</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/" >
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://r22.fr/" target="_blank" rel="noopener">
+        r22
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Boutons</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#boutons">Boutons</a>
+      <ul>
+        <li><a href="#core-button">Core Button</a></li>
+        <li><a href="#couleur-des-boutons">Couleur des boutons</a></li>
+        <li><a href="#tailles-des-boutons">Tailles des boutons</a></li>
+        <li><a href="#formes-des-boutons">Formes des boutons</a></li>
+        <li><a href="#êtat-des-boutons">Êtat des boutons</a></li>
+        <li><a href="#groupe-de-bouton">Groupe de bouton</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="boutons">
+  Boutons
+  <a class="anchor" href="#boutons">#</a>
+</h1>
+<blockquote class="book-hint danger">
+  <strong>Attention</strong> : Cette page n&rsquo;est pas complète. La transition de la documentation en v2 à laissé des incohérences dans cette page !
+</blockquote>
+
+<p>Cette section présente des boutons simples d&rsquo;usages en différents styles, tailles et types.</p>
+<h2 id="core-button">
+  Core Button
+  <a class="anchor" href="#core-button">#</a>
+</h2>
+<p><button class="btn">Bouton de défault</button>
 <button class="btn btn--bold">Bouton gras</button>
 <button class="btn btn--primaire">Bouton primaire</button>
 <button class="btn btn--primaire--alt">Bouton alternatif</button>
 <button class="btn btn--secondaire">Bouton secondaire</button>
-<a href="some link" class="btn btn--link">Lien</a></p><pre><code>&lt;button class=&quot;btn&quot;&gt;Bouton de défault&lt;/button&gt;
+<a href="some link" class="btn btn--link">Lien</a></p>
+<pre><code>&lt;button class=&quot;btn&quot;&gt;Bouton de défault&lt;/button&gt;
 &lt;button class=&quot;btn btn--bold&quot;&gt;Bouton gras&lt;/button&gt;
 &lt;button class=&quot;btn btn--primaire&quot;&gt;Bouton primaire&lt;/button&gt;
 &lt;button class=&quot;btn btn--primaire--alt&quot;&gt;Bouton primaire mediant&lt;/button&gt;
 &lt;button class=&quot;btn btn--secondaire&quot;&gt;Bouton secondaire&lt;/button&gt;
 &lt;a href=&quot;some link&quot; class=&quot;btn btn--link&quot;&gt;Lien&lt;/a&gt;
-</code></pre><h2 id=couleur-des-boutons>Couleur des boutons
-<a class=anchor href=#couleur-des-boutons>#</a></h2><p>Les couleurs sont attribués via le color.less</p><p><button class="btn btn--success">button de succès</button>
-<button class="btn btn--error">button d&rsquo;erreur</button></p><pre><code>&lt;button class=&quot;btn btn--success&quot;&gt;button de succès&lt;/button&gt;
+</code></pre><h2 id="couleur-des-boutons">
+  Couleur des boutons
+  <a class="anchor" href="#couleur-des-boutons">#</a>
+</h2>
+<p>Les couleurs sont attribués via le color.less</p>
+<p><button class="btn btn--success">button de succès</button>
+<button class="btn btn--error">button d&rsquo;erreur</button></p>
+<pre><code>&lt;button class=&quot;btn btn--success&quot;&gt;button de succès&lt;/button&gt;
 &lt;button class=&quot;btn btn--error&quot;&gt;button d'erreur&lt;/button&gt;
-</code></pre><h2 id=tailles-des-boutons>Tailles des boutons
-<a class=anchor href=#tailles-des-boutons>#</a></h2><p>Trois classes maîtrisent les taillent des boutons :</p><ul><li>grand</li><li>moyen</li><li>petit</li></ul><p><button class="btn btn--grand">grand bouton</button>
-<button class=btn>bouton moyen</button>
-<button class="btn btn--petit">petit bouton</button></p><p>Pour un bouton &ldquo;full width&rdquo;, la classe <code>toute_taille</code> est de mise</p><p><button class="btn btn--toute_taille">Bouton toute_taille</button></p><pre><code>&lt;button class=&quot;btn btn--grand&quot;&gt;grand bouton&lt;/button&gt;
+</code></pre><h2 id="tailles-des-boutons">
+  Tailles des boutons
+  <a class="anchor" href="#tailles-des-boutons">#</a>
+</h2>
+<p>Trois classes maîtrisent les taillent des boutons :</p>
+<ul>
+<li>grand</li>
+<li>moyen</li>
+<li>petit</li>
+</ul>
+<p><button class="btn btn--grand">grand bouton</button>
+<button class="btn">bouton moyen</button>
+<button class="btn btn--petit">petit bouton</button></p>
+<p>Pour un bouton &ldquo;full width&rdquo;, la classe <code>toute_taille</code> est de mise</p>
+<p><button class="btn btn--toute_taille">Bouton toute_taille</button></p>
+<pre><code>&lt;button class=&quot;btn btn--grand&quot;&gt;grand bouton&lt;/button&gt;
 &lt;button class=&quot;btn&quot;&gt;bouton moyen&lt;/button&gt;
 &lt;button class=&quot;btn btn--petit&quot;&gt;petit bouton&lt;/button&gt;
 
 &lt;button class=&quot;btn btn--toute_taille&quot;&gt;Bouton toute-taille&lt;/button&gt;
-</code></pre><h2 id=formes-des-boutons>Formes des boutons
-<a class=anchor href=#formes-des-boutons>#</a></h2><p>Pour des boutons de forme carrées, la classe <code>btn-action-carre</code> est utilisée.
-Pour des boutons de forme ronde, la classe <code>btn-action-cercle</code> est utilisée.</p><p><button class="btn btn--carre"><i class=icon-smile-o></i></button>
+</code></pre><h2 id="formes-des-boutons">
+  Formes des boutons
+  <a class="anchor" href="#formes-des-boutons">#</a>
+</h2>
+<p>Pour des boutons de forme carrées, la classe <code>btn-action-carre</code> est utilisée.
+Pour des boutons de forme ronde, la classe <code>btn-action-cercle</code> est utilisée.</p>
+<p><button class="btn btn--carre"><i class="icon-smile-o"></i></button>
 <button class="btn btn--bold btn--carre">La suite</i></button>
 <button class="btn btn--primaire btn--carre">En savoir plus</i></button>
-<button class="btn btn--secondaire btn--carre">Aller !</i></button></p><hr><p><button class="btn btn--petit btn--cercle"><i class=icon-smile-o></i></button>
-<button class="btn btn--primaire btn--cercle"><i class=icon-smile-o></i></button>
-<button class="btn btn--primaire--alt btn--grand btn--cercle"><i class=icon-smile-o></i></button>
-<button class="btn btn--petit btn--cercle"><i class=icon-expand_more></i></button>
-<button class="btn btn--cercle"><i class=icon-expand_more></i></button>
-<button class="btn btn--grand btn--cercle"><i class=icon-expand_more></i></button></p><pre><code>&lt;button class=&quot;btn btn--carre&quot;&gt;&lt;i class=&quot;icon-smile-o&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+<button class="btn btn--secondaire btn--carre">Aller !</i></button></p>
+<hr>
+<p><button class="btn btn--petit btn--cercle"><i class="icon-smile-o"></i></button>
+<button class="btn btn--primaire btn--cercle"><i class="icon-smile-o"></i></button>
+<button class="btn btn--primaire--alt btn--grand btn--cercle"><i class="icon-smile-o"></i></button>
+<button class="btn btn--petit btn--cercle"><i class="icon-expand_more"></i></button>
+<button class="btn btn--cercle"><i class="icon-expand_more"></i></button>
+<button class="btn btn--grand btn--cercle"><i class="icon-expand_more"></i></button></p>
+<pre><code>&lt;button class=&quot;btn btn--carre&quot;&gt;&lt;i class=&quot;icon-smile-o&quot;&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;button class=&quot;btn btn--cercle&quot;&gt;&lt;i class=&quot;icon-smile-o&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-</code></pre><hr><h2 id=êtat-des-boutons>Êtat des boutons
-<a class=anchor href=#%c3%aatat-des-boutons>#</a></h2><p>Pour un bouton <strong>actif</strong> il faut ajouter la classe <code>active</code> ou l&rsquo;attribut <code>active</code></p><p><button class="btn btn--active">Bouton actif</button>
+</code></pre><hr>
+<h2 id="êtat-des-boutons">
+  Êtat des boutons
+  <a class="anchor" href="#%c3%aatat-des-boutons">#</a>
+</h2>
+<p>Pour un bouton <strong>actif</strong> il faut ajouter la classe <code>active</code> ou l&rsquo;attribut <code>active</code></p>
+<p><button class="btn btn--active">Bouton actif</button>
 <button class="btn btn--primaire btn--active">Bouton actif</button>
-<button class="btn btn--primaire--alt btn--active">Bouton actif</button></p><pre><code>&lt;button class=&quot;btn btn--active&quot;&gt;Bouton actif&lt;/button&gt;
+<button class="btn btn--primaire--alt btn--active">Bouton actif</button></p>
+<pre><code>&lt;button class=&quot;btn btn--active&quot;&gt;Bouton actif&lt;/button&gt;
 &lt;button class=&quot;btn btn--primaire btn--active&quot;&gt;Bouton actif&lt;/button&gt;
 &lt;button class=&quot;btn btn--primaire--alt btn--active&quot;&gt;Bouton actif&lt;/button&gt;
-</code></pre><p>Pour un bouton <strong>désactivé</strong> il faut ajouter la classe <code>desactive</code> ou l&rsquo;attribut <code>disabled</code></p><p><button class="btn btn--desactive" tabindex=-1>Bouton désactivé</button>
-<button class=btn disabled tabindex=-1>Bouton désactivé</button>
-<button class="btn btn--primaire btn--desactive" tabindex=-1>Bouton désactivé</button></p><pre><code>&lt;button class=&quot;btn btn--desactive&quot; tabindex=&quot;-1&quot;&gt;Bouton désactivé&lt;/button&gt;
+</code></pre><p>Pour un bouton <strong>désactivé</strong> il faut ajouter la classe <code>desactive</code> ou l&rsquo;attribut <code>disabled</code></p>
+<p><button class="btn btn--desactive" tabindex="-1">Bouton désactivé</button>
+<button class="btn" disabled tabindex="-1">Bouton désactivé</button>
+<button class="btn btn--primaire btn--desactive" tabindex="-1">Bouton désactivé</button></p>
+<pre><code>&lt;button class=&quot;btn btn--desactive&quot; tabindex=&quot;-1&quot;&gt;Bouton désactivé&lt;/button&gt;
 &lt;button class=&quot;btn&quot; disabled tabindex=&quot;-1&quot;&gt;Bouton désactivé&lt;/button&gt;
-</code></pre><p>Pour un état de chargement pour les boutons, il faut ajouter la classe <code>tournoiement</code>.</p><p><button class="btn btn--tournoiement">button</button>
+</code></pre><p>Pour un état de chargement pour les boutons, il faut ajouter la classe <code>tournoiement</code>.</p>
+<p><button class="btn btn--tournoiement">button</button>
 <button class="btn btn--primaire btn--tournoiement">button</button>
-<button class="btn btn--primaire btn--toute_taille btn--tournoiement">button</button></p><pre><code>&lt;button class=&quot;btn btn--tournoiement&quot;&gt;button&lt;/button&gt;
-</code></pre><h2 id=groupe-de-bouton>Groupe de bouton
-<a class=anchor href=#groupe-de-bouton>#</a></h2><p>Pour forger un ensemble de bouton groupé, il faut ajouter la classe <code>btn_assemblee</code> au parent contenant. Pour un groupe <em>full width</em>, il faut rajouter la classe <code>btn_assemblee--toute-taille</code>.</p><div class=btn_assemblee><button class=btn>Premier bouton</button>
-<button class=btn>Second bouton</button>
-<button class=btn>Troisième bouton</button></div><div class=btn_assemblee><button class="btn btn--grand">Premier bouton</button>
-<button class="btn btn--grand">Second bouton</button>
-<button class="btn btn--grand">Troisième bouton</button></div><div class="btn__assemblee btn_assemblee--toute_taille"><button class="btn btn--primaire btn--grand">Premier bouton</button>
-<button class="btn btn--primaire btn--grand">Second bouton</button>
-<button class="btn btn--primaire btn--grand">Troisième bouton</button></div><pre><code>&lt;div class=&quot;btn_assemblee btn_assemblee--toute_taille&quot;&gt;
+<button class="btn btn--primaire btn--toute_taille btn--tournoiement">button</button></p>
+<pre><code>&lt;button class=&quot;btn btn--tournoiement&quot;&gt;button&lt;/button&gt;
+</code></pre><h2 id="groupe-de-bouton">
+  Groupe de bouton
+  <a class="anchor" href="#groupe-de-bouton">#</a>
+</h2>
+<p>Pour forger un ensemble de bouton groupé, il faut ajouter la classe <code>btn_assemblee</code> au parent contenant. Pour un groupe <em>full width</em>, il faut rajouter la classe <code>btn_assemblee--toute-taille</code>.</p>
+<div class="btn_assemblee">
+  <button class="btn">Premier bouton</button>
+  <button class="btn">Second bouton</button>
+  <button class="btn">Troisième bouton</button>
+</div>
+<div class="btn_assemblee">
+  <button class="btn btn--grand">Premier bouton</button>
+  <button class="btn btn--grand">Second bouton</button>
+  <button class="btn btn--grand">Troisième bouton</button>
+</div>
+<div class="btn__assemblee btn_assemblee--toute_taille">
+  <button class="btn btn--primaire btn--grand">Premier bouton</button>
+  <button class="btn btn--primaire btn--grand">Second bouton</button>
+  <button class="btn btn--primaire btn--grand">Troisième bouton</button>
+</div>
+<pre><code>&lt;div class=&quot;btn_assemblee btn_assemblee--toute_taille&quot;&gt;
   &lt;button class=&quot;btn&quot;&gt;Premier bouton&lt;/button&gt;
   &lt;button class=&quot;btn&quot;&gt;Second bouton&lt;/button&gt;
   &lt;button class=&quot;btn&quot;&gt;Troisième bouton&lt;/button&gt;
 &lt;/div&gt;
-</code></pre><style>.btn{font-size:16px;font-family:chivo,sans-serif;cursor:pointer;margin:.3em 0;padding:.3em .5em;border-radius:.2em;border:1px solid #fa8f8a;color:#fa8f8a;background-color:transparent;transition:all .3s ease;font-weight:600}.btn:hover{border-color:#ff5c55;background-color:#ff5c55;color:#fff}.btn--bold{font-weight:900}.btn--primaire,.btn .btn--primaire{background-color:#ff3c33;border-color:#ff3c33;color:#fff;font-weight:900;letter-spacing:.01em}.btn--primaire:hover,.btn .btn--primaire:hover,.btn--primaire.btn--active,.btn .btn--primaire.btn--active{background-color:#e60707;border-color:#e60707;color:#fff}.btn--primaire--alt{background-color:#ff5c55;border-color:#ff5c55;color:#fff;font-weight:900;letter-spacing:.01em}.btn--primaire--alt:hover,.btn--primaire--alt.btn--active{background-color:#e60707;border-color:#e60707;color:#fff}.btn--secondaire{background-color:#505155;border-color:#505155;color:#fff;font-weight:900;letter-spacing:.01em}.btn--secondaire:hover,.btn--secondaire:focus,.btn--secondaire.btn--active{background-color:#353e56;border-color:#353e56;color:#fff}.btn--link{display:inline-block;line-height:1.3;font-weight:700}.btn--grand{font-size:18px;font-size:1.125em;line-height:1.5}.btn--petit{font-size:14px;font-size:.875em;line-height:20px;line-height:1.42857143}.btn--toute_taille{width:100%}.btn--carre{border-radius:0;padding:.4em .6em}.btn--cercle{border-radius:50%;padding:.4em .6em;height:2.3em;width:2.3em}.btn--active{pointer-events:visible}.btn--primaire--alt:hover,.btn--primaire--alt.btn--active{background-color:#e60707;border-color:#e60707;color:#fff}.btn--desactive,.btn[disabled]{pointer-events:none;cursor:default;background-color:#fff;border-color:#d6d6d6;color:#d6d6d6}</style></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/wizhou/r22-docs/commit/123bdd2dab349d80f47666ca666af43ddb32acc8 title="Dernière modification par wizhou | July 21, 2020" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>July 21, 2020</span></a></div><div><a class="flex align-center" href=https://github.com/wizhou/r22-docs/edit/master/content//docs/charte-graphique/typographies/boutons/_index.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
-<span>Modifier cette page</span></a></div></div></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><nav id=TableOfContents><ul><li><a href=#boutons>Boutons</a><ul><li><a href=#core-button>Core Button</a></li><li><a href=#couleur-des-boutons>Couleur des boutons</a></li><li><a href=#tailles-des-boutons>Tailles des boutons</a></li><li><a href=#formes-des-boutons>Formes des boutons</a></li><li><a href=#êtat-des-boutons>Êtat des boutons</a></li><li><a href=#groupe-de-bouton>Groupe de bouton</a></li></ul></li></ul></nav></aside></main></body></html>
+</code></pre><style>
+
+.btn {
+  font-size: 16px;
+  font-family: 'Chivo',sans-serif;
+  cursor: pointer;
+  margin: 0.3em 0;
+  padding: .3em .5em;
+  border-radius: .2em;
+  border: 1px solid #FA8F8A;
+  color: #FA8F8A;
+  background-color: transparent;
+  transition: all .3s ease;
+  font-weight: 600;
+}
+
+.btn:hover {
+  border-color: #FF5C55;
+  background-color: #FF5C55;
+  color: white;
+}
+
+.btn--bold {
+  font-weight: 900;
+}
+
+.btn--primaire,
+.btn .btn--primaire {
+  background-color: #FF3C33;
+  border-color: #FF3C33;
+  color: white;
+  font-weight: 900;
+  letter-spacing: .01em;
+}
+
+.btn--primaire:hover,
+.btn .btn--primaire:hover,
+.btn--primaire.btn--active,
+.btn .btn--primaire.btn--active {
+  background-color: #e60707;
+  border-color: #e60707;
+  color: white;
+}
+
+.btn--primaire--alt {
+  background-color: #FF5C55;
+  border-color: #FF5C55;
+  color: white;
+  font-weight: 900;
+  letter-spacing: .01em;
+}
+
+.btn--primaire--alt:hover,
+.btn--primaire--alt.btn--active {
+  background-color: #e60707;
+  border-color: #e60707;
+  color: white;
+}
+
+.btn--secondaire {
+  background-color: #505155;
+  border-color: #505155;
+  color: white;
+  font-weight: 900;
+  letter-spacing: .01em;
+}
+
+.btn--secondaire:hover,
+.btn--secondaire:focus,
+.btn--secondaire.btn--active {
+  background-color: #353E56;
+  border-color: #353E56;
+  color: white;
+}
+
+.btn--link {
+  display: inline-block;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.btn--grand {
+  font-size: 18px;
+  font-size: 1.125em;
+  line-height: 1.5;
+}
+
+.btn--petit {
+  font-size: 14px;
+  font-size: .875em;
+  line-height: 20px;
+  line-height: 1.42857143;
+}
+
+.btn--toute_taille {
+  width: 100%;
+}
+
+.btn--carre {
+  border-radius: 0;
+  padding: .4em .6em;
+}
+
+.btn--cercle {
+  border-radius: 50%;
+  padding: .4em .6em;
+  height: 2.3em;
+  width: 2.3em;
+}
+
+.btn--active {
+    pointer-events: visible;
+}
+
+.btn--primaire--alt:hover,
+.btn--primaire--alt.btn--active {
+  background-color: #e60707;
+  border-color: #e60707;
+  color: white;
+}
+
+.btn--desactive, .btn[disabled] {
+  pointer-events: none;
+  cursor: default;
+  background-color: white;
+  border-color: #D6D6D6;
+  color: #D6D6D6;
+}
+
+</style>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/wizhou/r22-docs/commit/123bdd2dab349d80f47666ca666af43ddb32acc8" title='Dernière modification par wizhou | July 21, 2020' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>July 21, 2020</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/wizhou/r22-docs/edit/master/content//docs/charte-graphique/typographies/boutons/_index.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Modifier cette page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#boutons">Boutons</a>
+      <ul>
+        <li><a href="#core-button">Core Button</a></li>
+        <li><a href="#couleur-des-boutons">Couleur des boutons</a></li>
+        <li><a href="#tailles-des-boutons">Tailles des boutons</a></li>
+        <li><a href="#formes-des-boutons">Formes des boutons</a></li>
+        <li><a href="#êtat-des-boutons">Êtat des boutons</a></li>
+        <li><a href="#groupe-de-bouton">Groupe de bouton</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

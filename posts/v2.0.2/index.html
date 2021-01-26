@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="v2.0.1 - Journal des changements">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="v2.0.1" />
-<meta property="og:description" content="v2.0.1 - Journal des changements" />
+<meta name="description" content="v2.0.2 - Journal des changements">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="v2.0.2" />
+<meta property="og:description" content="v2.0.2 - Journal des changements" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://docs.r22.fr/posts/v2.0.1/" />
+<meta property="og:url" content="https://docs.r22.fr/posts/v2.0.2/" />
 <meta property="article:modified_time" content="2021-01-26T08:38:12+01:00" />
-<title>v2.0.1 | R22 Documentation</title>
+<title>v2.0.2 | R22 Documentation</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.621451d74bd2231e73fcbde6de2f358e5109686b4d325c1469432ce1ac1bc672.css" integrity="sha256-YhRR10vSIx5z/L3m3i81jlEJaGtNMlwUaUMs4awbxnI=">
@@ -233,7 +233,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>v2.0.1</strong>
+  <strong>v2.0.2</strong>
 
   <label for="toc-control">
     
@@ -248,17 +248,19 @@ https://github.com/alex-shpak/hugo-book
     
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#v201---journal-des-changements">v2.0.1 - Journal des changements</a>
+    <li><a href="#v202---journal-des-changements">v2.0.2 - Journal des changements</a>
       <ul>
-        <li><a href="#bugs-fixed">Bugs fixed</a>
-          <ul>
-            <li><a href="#bug-auteurices">Bug Auteurices</a></li>
-          </ul>
-        </li>
         <li><a href="#new-features">New Features</a>
           <ul>
-            <li><a href="#kirby-janitor">Kirby Janitor</a></li>
-            <li><a href="#kirby-log">Kirby log</a></li>
+            <li><a href="#plugin-r22-embded">Plugin r22-Embded</a></li>
+            <li><a href="#font-swap">Font swap</a></li>
+            <li><a href="#fatal-page">Fatal page</a></li>
+          </ul>
+        </li>
+        <li><a href="#refactoring">Refactoring</a>
+          <ul>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#modales">Modales</a></li>
           </ul>
         </li>
       </ul>
@@ -276,7 +278,7 @@ https://github.com/alex-shpak/hugo-book
       
 <article class="markdown">
   <h1>
-    <a href="/posts/v2.0.1/">v2.0.1</a>
+    <a href="/posts/v2.0.2/">v2.0.2</a>
   </h1>
   
 
@@ -286,34 +288,43 @@ https://github.com/alex-shpak/hugo-book
   
 
 
-  <p><h1 id="v201---journal-des-changements">
-  v2.0.1 - Journal des changements
-  <a class="anchor" href="#v201---journal-des-changements">#</a>
+  <p><h1 id="v202---journal-des-changements">
+  v2.0.2 - Journal des changements
+  <a class="anchor" href="#v202---journal-des-changements">#</a>
 </h1>
-<h2 id="bugs-fixed">
-  Bugs fixed
-  <a class="anchor" href="#bugs-fixed">#</a>
-</h2>
-<h3 id="bug-auteurices">
-  Bug Auteurices
-  <a class="anchor" href="#bug-auteurices">#</a>
-</h3>
-<p>Le bug causant les liens vers les pages Auteurice à été réparé. Il était causé par une mauvaise création des pages à la racine des Auteurices, au sein du <code>hook</code> dédié, causant leur la corruption de leur <code>slug</code>.</p>
-<p>Si la création de page a été réparé, malheureusement il n&rsquo;est pas possible de récupérer les auteurices déjà renseignés dans les publications. Il faudra re-selectionner les auteurices concerné à la main.</p>
 <h2 id="new-features">
   New Features
   <a class="anchor" href="#new-features">#</a>
 </h2>
-<h3 id="kirby-janitor">
-  Kirby Janitor
-  <a class="anchor" href="#kirby-janitor">#</a>
+<h3 id="plugin-r22-embded">
+  Plugin r22-Embded
+  <a class="anchor" href="#plugin-r22-embded">#</a>
 </h3>
-<p>Ajout du submodule kirby janitor pour configurer des travaux de maintenance du site internet à différents niveaux (vider le cache, nettoyer des pages mal formatées, etc.)</p>
-<h3 id="kirby-log">
-  Kirby log
-  <a class="anchor" href="#kirby-log">#</a>
+<p>Ce nouveau plugin permet de partager des contributions en dehors du site grâce à des embded (ou cartes) à intégrer sur des site webs externes.</p>
+<h3 id="font-swap">
+  Font swap
+  <a class="anchor" href="#font-swap">#</a>
 </h3>
-<p>Ajout du submodule kirby log pour garder une trace des erreurs qui peuvent subvenir pendant l&rsquo;utilisation du site internet.</p>
+<p>Le comportement de base des polices du site internet sera le <code>font-swap</code> dans les navigateurs compatibles. C&rsquo;est-à-dire que les informations seront d&rsquo;abord affichées dans une police système avant que celle-ci ne soit remplacée par les polices du site internet lorsqu&rsquo;elles seront chargées.</p>
+<h3 id="fatal-page">
+  Fatal page
+  <a class="anchor" href="#fatal-page">#</a>
+</h3>
+<p>Ajout d&rsquo;une page qui s&rsquo;affiche en cas d&rsquo;une erreur fatale du site internet.</p>
+<h2 id="refactoring">
+  Refactoring
+  <a class="anchor" href="#refactoring">#</a>
+</h2>
+<h3 id="collections">
+  Collections
+  <a class="anchor" href="#collections">#</a>
+</h3>
+<p>Mise à jour et amélioration de la section <code>site/collections</code>.</p>
+<h3 id="modales">
+  Modales
+  <a class="anchor" href="#modales">#</a>
+</h3>
+<p>Mise à jour et amélioration des boîtes modales.</p>
 </p>
 </article>
  
@@ -334,7 +345,7 @@ https://github.com/alex-shpak/hugo-book
 
 
   <div>
-    <a class="flex align-center" href="https://github.com/wizhou/r22-docs/edit/master/content//posts/v2.0.1.md" target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/wizhou/r22-docs/edit/master/content//posts/v2.0.2.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Modifier cette page</span>
     </a>
@@ -358,17 +369,19 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#v201---journal-des-changements">v2.0.1 - Journal des changements</a>
+    <li><a href="#v202---journal-des-changements">v2.0.2 - Journal des changements</a>
       <ul>
-        <li><a href="#bugs-fixed">Bugs fixed</a>
-          <ul>
-            <li><a href="#bug-auteurices">Bug Auteurices</a></li>
-          </ul>
-        </li>
         <li><a href="#new-features">New Features</a>
           <ul>
-            <li><a href="#kirby-janitor">Kirby Janitor</a></li>
-            <li><a href="#kirby-log">Kirby log</a></li>
+            <li><a href="#plugin-r22-embded">Plugin r22-Embded</a></li>
+            <li><a href="#font-swap">Font swap</a></li>
+            <li><a href="#fatal-page">Fatal page</a></li>
+          </ul>
+        </li>
+        <li><a href="#refactoring">Refactoring</a>
+          <ul>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#modales">Modales</a></li>
           </ul>
         </li>
       </ul>

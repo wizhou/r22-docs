@@ -1,7 +1,337 @@
-<!doctype html><html lang=fr><head><meta name=generator content="Hugo 0.80.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Bienvenue dans la documentation ! #  Cet espace est là pour détailler l’architecture de la plateforme et vous accompagner dans son éditorialisation. Vous trouverez les informations correspondants à vos besoins dans le menu à gauche. Si vous pensez qu’il faudrait plus de précisions à certains endroits, merci de nous en informer à l’adress radio@r22.fr."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Introduction"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://docs.r22.fr/"><title>Introduction | R22 Documentation</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.621451d74bd2231e73fcbde6de2f358e5109686b4d325c1469432ce1ac1bc672.css integrity="sha256-YhRR10vSIx5z/L3m3i81jlEJaGtNMlwUaUMs4awbxnI="><script defer src=/fr.search.min.832b9d1a7f92b4198fbd6de1905842e5e2f470985b0899aeb5822141f156c4f2.js integrity="sha256-gyudGn+StBmPvW3hkFhC5eL0cJhbCJmutYIhQfFWxPI="></script><link rel=alternate type=application/rss+xml href=https://docs.r22.fr/index.xml title="R22 Documentation"><meta name=robots content="noindex,follow"></head><body><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><nav><h2 class=book-brand><a href=/><span>R22 Documentation</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Rechercher aria-label=Rechercher maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><a href=/docs/panel/ class=collapsed>Le Panel</a></li><li><a href=/docs/contenu/ class=collapsed>Le Contenu</a></li><li><a href=/docs/charte-graphique/ class=collapsed>Charte graphique</a></li><li><a href=/docs/glossaire/>Glossaire</a><ul></ul></li><li><a href=/docs/construction/>Mettre en ligne une contribution</a><ul></ul></li><li><a href=/docs/raccourcis/>Raccourcis</a><ul></ul></li></ul><ul><li><a href=/posts/>Blog</a></li><li><a href=https://r22.fr/ target=_blank rel=noopener>r22</a></li></ul></nav><script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
-<strong>Introduction</strong>
-<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#bienvenue-dans-la-documentation->Bienvenue dans la documentation !</a></li></ul></nav></aside></header><article class=markdown><h1 id=bienvenue-dans-la-documentation->Bienvenue dans la documentation !
-<a class=anchor href=#bienvenue-dans-la-documentation->#</a></h1><p>Cet espace est là pour détailler l’architecture de la plateforme et vous accompagner dans son éditorialisation. Vous trouverez les informations correspondants à vos besoins dans le menu à gauche. Si vous pensez qu’il faudrait plus de précisions à certains endroits, merci de nous en informer à l’adress <a href=mailto:radio@r22.fr>radio@r22.fr</a>.</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/wizhou/r22-docs/commit/08e30b5558152b5cf8d04786e8ef4155be5a7bb6 title="Dernière modification par wizhou | July 22, 2020" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>July 22, 2020</span></a></div><div><a class="flex align-center" href=https://github.com/wizhou/r22-docs/edit/master/content//_index.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
-<span>Modifier cette page</span></a></div></div></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><nav id=TableOfContents><ul><li><a href=#bienvenue-dans-la-documentation->Bienvenue dans la documentation !</a></li></ul></nav></aside></main></body></html>
+<!DOCTYPE html>
+<html lang="fr" dir=>
+
+<head>
+	<meta name="generator" content="Hugo 0.80.0" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bienvenue dans la documentation ! #  Cet espace est là pour détailler l’architecture de la plateforme et vous accompagner dans son éditorialisation. Vous trouverez les informations correspondants à vos besoins dans le menu à gauche. Si vous pensez qu’il faudrait plus de précisions à certains endroits, merci de nous en informer à l’adress radio@r22.fr.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Introduction" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://docs.r22.fr/" />
+
+<title>Introduction | R22 Documentation</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.621451d74bd2231e73fcbde6de2f358e5109686b4d325c1469432ce1ac1bc672.css" integrity="sha256-YhRR10vSIx5z/L3m3i81jlEJaGtNMlwUaUMs4awbxnI=">
+<script defer src="/fr.search.min.bdca134f961e63de024ade751560136b57693a831778ff29443c18c022404ab4.js" integrity="sha256-vcoTT5YeY94CSt51FWATa1dpOoMXeP8pRDwYwCJASrQ="></script>
+<link rel="alternate" type="application/rss+xml" href="https://docs.r22.fr/index.xml" title="R22 Documentation" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  <meta name='robots' content='noindex,follow'/>
+
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>R22 Documentation</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Rechercher" aria-label="Rechercher" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/panel/" class="collapsed ">Le Panel</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/contenu/" class="collapsed ">Le Contenu</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/charte-graphique/" class="collapsed ">Charte graphique</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/glossaire/" class="">Glossaire</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/construction/" class="">Mettre en ligne une contribution</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/raccourcis/" class="">Raccourcis</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/" >
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://r22.fr/" target="_blank" rel="noopener">
+        r22
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Introduction</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#bienvenue-dans-la-documentation-">Bienvenue dans la documentation !</a></li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="bienvenue-dans-la-documentation-">
+  Bienvenue dans la documentation !
+  <a class="anchor" href="#bienvenue-dans-la-documentation-">#</a>
+</h1>
+<p>Cet espace est là pour détailler l’architecture de la plateforme et vous accompagner dans son éditorialisation. Vous trouverez les informations correspondants à vos besoins dans le menu à gauche. Si vous pensez qu’il faudrait plus de précisions à certains endroits, merci de nous en informer à l’adress <a href="mailto:radio@r22.fr">radio@r22.fr</a>.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/wizhou/r22-docs/commit/08e30b5558152b5cf8d04786e8ef4155be5a7bb6" title='Dernière modification par wizhou | July 22, 2020' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>July 22, 2020</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/wizhou/r22-docs/edit/master/content//_index.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Modifier cette page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#bienvenue-dans-la-documentation-">Bienvenue dans la documentation !</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
