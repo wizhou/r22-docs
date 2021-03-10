@@ -1,7 +1,7 @@
 ---
 menu:
   after:
-    name: blog
+    name: changelog
     weight: 5
-title: Blog
+title: Journal des versions
 ---
